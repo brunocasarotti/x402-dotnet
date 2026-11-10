@@ -26,7 +26,7 @@ namespace x402.Client.v2
 
             try
             {
-                jsonOptions ??= JsonSerializerOptions.Web;
+                jsonOptions ??= new JsonSerializerOptions(JsonSerializerDefaults.Web);
 
                 string json = Encoding.UTF8.GetString(Convert.FromBase64String(base64));
                 return JsonSerializer.Deserialize<SettlementResponseHeader>(json, jsonOptions);

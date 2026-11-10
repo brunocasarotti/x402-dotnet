@@ -6,6 +6,8 @@
 Starting with version 2.0.0, this library targets x402 **v2**.  
 All 0.x versions target x402 v1.
 
+The reusable libraries target both **.NET 8.0** and **.NET 10.0**. Sample applications remain on .NET 10.0.
+
 
 ### x402 on the server
 Install the `x402` packages from NuGet:
